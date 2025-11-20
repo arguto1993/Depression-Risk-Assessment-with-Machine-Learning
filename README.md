@@ -28,24 +28,24 @@ This project follows Streamlit best practices for code organization:
 
 ```
 .
-├── app.py                      # Main application entry point
+├── app.py
 ├── .streamlit/
-│   └── config.toml            # Streamlit configuration
-├── models/                     # Machine learning models
+│   └── config.toml
+├── models/
 │   ├── logistic_regression_model.pkl
 │   ├── label_encoders.pkl
 │   └── sleep_duration_mapping.pkl
-├── pages/                      # Page components
-│   ├── risk_assessment.py     # Risk assessment page
-│   ├── dashboard.py           # Dashboard page
-│   └── about.py               # About page
-├── utils/                      # Utility modules
-│   ├── config.py              # Configuration constants
-│   ├── data_loader.py         # Model and data loading
-│   └── prediction.py          # Prediction logic
-├── dataset/                    # Dataset files
-├── documentation/              # Project documentation
-└── requirements.txt           # Python dependencies
+├── pages/
+│   ├── risk_assessment.py
+│   ├── dashboard.py
+│   └── about.py
+├── utils/
+│   ├── config.py
+│   ├── data_loader.py
+│   └── prediction.py
+├── dataset/
+├── documentation/
+└── requirements.txt
 ```
 
 ## Running the Application

@@ -28,24 +28,24 @@ Proyek ini mengikuti praktik terbaik Streamlit untuk organisasi kode:
 
 ```
 .
-├── app.py                      # Titik masuk aplikasi utama
+├── app.py
 ├── .streamlit/
-│   └── config.toml            # Konfigurasi Streamlit
-├── models/                     # Model pembelajaran mesin
+│   └── config.toml
+├── models/
 │   ├── logistic_regression_model.pkl
 │   ├── label_encoders.pkl
 │   └── sleep_duration_mapping.pkl
-├── pages/                      # Komponen halaman
-│   ├── risk_assessment.py     # Halaman penilaian risiko
-│   ├── dashboard.py           # Halaman dashboard
-│   └── about.py               # Halaman tentang
-├── utils/                      # Modul utilitas
-│   ├── config.py              # Konstanta konfigurasi
-│   ├── data_loader.py         # Pemuatan model dan data
-│   └── prediction.py          # Logika prediksi
-├── dataset/                    # File dataset
-├── documentation/              # Dokumentasi proyek
-└── requirements.txt           # Dependensi Python
+├── pages/
+│   ├── risk_assessment.py
+│   ├── dashboard.py
+│   └── about.py
+├── utils/
+│   ├── config.py
+│   ├── data_loader.py
+│   └── prediction.py
+├── dataset/
+├── documentation/
+└── requirements.txt
 ```
 
 ## Menjalankan Aplikasi
