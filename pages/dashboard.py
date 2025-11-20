@@ -18,11 +18,15 @@ def create_donut_chart(df):
     depression_counts.columns = ['Depression', 'Count']
     depression_counts['Depression'] = depression_counts['Depression'].map({1: 'Yes', 0: 'No'})
     
+    # Map colors based on the label to ensure correct color assignment
+    color_map = {'Yes': '#DC3545', 'No': '#28A745'}
+    colors = [color_map[label] for label in depression_counts['Depression']]
+    
     fig = go.Figure(data=[go.Pie(
         labels=depression_counts['Depression'],
         values=depression_counts['Count'],
         hole=0.6,
-        marker=dict(colors=['#DC3545', '#28A745']),
+        marker=dict(colors=colors),
         textinfo='label+percent',
         textfont=dict(size=14, color='white'),
         hovertemplate='%{label}<br>Count: %{value}<br>Percent: %{percent}<extra></extra>'
