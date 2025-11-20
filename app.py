@@ -7,8 +7,8 @@ def main():
     # Configure the page
     st.set_page_config(
         page_title=PAGE_TITLE,
+        layout="wide",
         # page_icon="favicon.png",
-        # layout="wide",
     )
 
     # App title
