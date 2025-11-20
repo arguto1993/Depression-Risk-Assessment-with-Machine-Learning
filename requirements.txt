@@ -1,6 +1,6 @@
 numpy
 pandas
+plotly
 scikit-learn
 streamlit
 tqdm
-plotly
