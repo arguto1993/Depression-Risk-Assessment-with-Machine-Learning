@@ -1,10 +1,6 @@
 import streamlit as st
 from utils.config import PAGE_TITLE, APP_TITLE
-from pages import (
-    render_risk_assessment_page,
-    render_dashboard_page,
-    render_about_page
-)
+from pages import render_risk_assessment_page, render_dashboard_page, render_about_page
 
 
 def main():
@@ -14,24 +10,20 @@ def main():
         # page_icon="favicon.png",
         # layout="wide",
     )
-    
+
     # App title
     st.title(APP_TITLE)
-    
+
     # Create tabs for different sections
-    tab1, tab2, tab3 = st.tabs([
-        "Risk Assessment",
-        "Dashboard",
-        "About"
-    ])
-    
+    tab1, tab2, tab3 = st.tabs(["Risk Assessment", "Dashboard", "About"])
+
     # Render each tab's content
     with tab1:
         render_risk_assessment_page()
-    
+
     with tab2:
         render_dashboard_page()
-    
+
     with tab3:
         render_about_page()
 

@@ -15,8 +15,7 @@ def render_about_page():
     - Purpose: Demonstrate machine learning application in mental health screening especially for student depression risk assessment.
 
     **Remember:** Your mental health is important. Seek professional help if needed.
-    """
-    )
-    
+    """)
+
     st.markdown(f"[Project Brief (ID)]({PROJECT_BRIEF_LINK})")
     st.markdown(f"[Github Repository]({GITHUB_REPO_LINK})")
