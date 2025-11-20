@@ -223,17 +223,23 @@ def render_dashboard_page():
     col1, col2, col3 = st.columns([1, 2, 2])
     
     with col1:
-        st.markdown("""
+        # Record count display
+        st.markdown(f"""
             <div style='background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; text-align: center;'>
                 <p style='font-size: 14px; margin: 0; color: #888;'>Record Count</p>
-                <h1 style='font-size: 48px; margin: 10px 0; color: white;'>27.9K</h1>
+                <h1 style='font-size: 48px; margin: 10px 0; color: white;'>{len(df) / 1000:.1f}K</h1>
             </div>
         """, unsafe_allow_html=True)
         
         # Filter section
         st.markdown("<br>", unsafe_allow_html=True)
         depression_filter = st.checkbox("Depression", value=True)
-        record_count_text = f"{len(df[df['Depression'] == 1]) / 1000:.1f}K" if depression_filter else f"{len(df[df['Depression'] == 0]) / 1000:.1f}K"
+        
+        # Show count breakdown
+        if depression_filter:
+            st.markdown(f"**1**: {len(df[df['Depression'] == 1]) / 1000:.1f}K")
+        else:
+            st.markdown(f"**0**: {len(df[df['Depression'] == 0]) / 1000:.1f}K")
         
     with col2:
         st.plotly_chart(create_donut_chart(df), use_container_width=True)
