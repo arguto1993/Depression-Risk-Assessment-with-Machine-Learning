@@ -22,6 +22,46 @@ This project aims to answer the following questions:
 ## Project Presentation Video
 - https://youtu.be/DQWeNKIEiIo
 
+## Project Structure
+
+This project follows Streamlit best practices for code organization:
+
+```
+.
+├── app.py                      # Main application entry point
+├── .streamlit/
+│   └── config.toml            # Streamlit configuration
+├── models/                     # Machine learning models
+│   ├── logistic_regression_model.pkl
+│   ├── label_encoders.pkl
+│   └── sleep_duration_mapping.pkl
+├── pages/                      # Page components
+│   ├── risk_assessment.py     # Risk assessment page
+│   ├── dashboard.py           # Dashboard page
+│   └── about.py               # About page
+├── utils/                      # Utility modules
+│   ├── config.py              # Configuration constants
+│   ├── data_loader.py         # Model and data loading
+│   └── prediction.py          # Prediction logic
+├── dataset/                    # Dataset files
+├── documentation/              # Project documentation
+└── requirements.txt           # Python dependencies
+```
+
+## Running the Application
+
+1. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+2. Run the Streamlit app:
+```bash
+streamlit run app.py
+```
+
+3. Open your browser and navigate to the provided local URL (typically http://localhost:8501)
+
 ---
 
 *For the Bahasa Indonesia version of this README, please see [README.id.md](README.id.md)*
