@@ -1,23 +1,27 @@
-# Mengidentifikasi Risiko Depresi dengan Pembelajaran Mesin
+# Depression Risk Assessment with Machine Learning
 
-## Tujuan
-Projek ini bertujuan untuk menjawab pertanyaan berikut:
-1. Apa saja faktor utama yang berkontribusi terhadap risiko depresi pada individu?
-2. Bagaimana model klasifikasi dapat digunakan untuk mengidentifikasi individu yang berisiko tinggi mengalami depresi?
+## Objectives
+This project aims to answer the following questions:
+1. What are the main factors that contribute to depression risk in individuals?
+2. How can a classification model be used to identify individuals at high risk of experiencing depression?
 
-## Hasil Yang Diharapkan
-1. Insight yang menjawab pertanyaan bisnis di atas berdasarkan analisis data yang dilakukan.
-2. Model prediksi yang dapat mengklasifikasikan individu menjadi dua kategori: depresi (label 1) dan tidak depresi (label 0), berdasarkan faktor-faktor yang relevan. Model ini dapat digunakan oleh berbagai lembaga pendidikan, perusahaan, dan organisasi untuk memberikan perhatian lebih kepada individu yang berisiko tinggi mengalami depresi, sehingga intervensi dapat dilakukan lebih awal.
-3. Website yang mendemonstrasikan kemampuan model dalam memprediksi risiko depresi seseorang.
+## Expected Results
+1. Insights that answer the business questions above based on data analysis conducted.
+2. A predictive model that can classify individuals into two categories: depressed (label 1) and not depressed (label 0), based on relevant factors. This model can be used by various educational institutions, companies, and organizations to provide greater attention to individuals at high risk of experiencing depression, so that intervention can be carried out earlier.
+3. A website that demonstrates the model's ability to predict a person's depression risk.
 
 ## Dataset
-- https://www.kaggle.com/datasets/hopesb/student-depression-dataset.
+- https://www.kaggle.com/datasets/hopesb/student-depression-dataset
 
-## Link website aplikasi
+## Application Website
 - https://depression-risk-assessment.streamlit.app/
 
-## Video demo penggunaan aplikasi
+## Application Demo Video
 - https://youtu.be/qTZRZB-TxGE
 
-## Video presentasi projek
+## Project Presentation Video
 - https://youtu.be/DQWeNKIEiIo
+
+---
+
+*For the Bahasa Indonesia version of this README, please see [README.id.md](README.id.md)*
