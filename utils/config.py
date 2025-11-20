@@ -1,7 +1,3 @@
-"""
-Configuration constants for the Depression Risk Assessment application.
-"""
-
 # Model file paths
 MODEL_PATH = "models/logistic_regression_model.pkl"
 LABEL_ENCODERS_PATH = "models/label_encoders.pkl"

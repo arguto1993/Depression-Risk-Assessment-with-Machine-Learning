@@ -1,7 +1,3 @@
-"""
-Data loading and caching utilities for the Depression Risk Assessment application.
-"""
-
 import pickle
 import streamlit as st
 from utils.config import MODEL_PATH, LABEL_ENCODERS_PATH, SLEEP_DURATION_MAPPING_PATH

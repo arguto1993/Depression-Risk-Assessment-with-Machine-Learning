@@ -1,7 +1,3 @@
-"""
-About page component for the Depression Risk Assessment application.
-"""
-
 import streamlit as st
 from utils.config import DATASET_LINK, PROJECT_BRIEF_LINK, GITHUB_REPO_LINK
 

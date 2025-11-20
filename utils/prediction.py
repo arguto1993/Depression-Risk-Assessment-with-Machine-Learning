@@ -1,7 +1,3 @@
-"""
-Prediction utilities for the Depression Risk Assessment application.
-"""
-
 import pandas as pd
 from utils.config import SELECTED_FEATURES, CATEGORICAL_FEATURES
 from utils.data_loader import load_model, load_label_encoders, load_sleep_duration_mapping

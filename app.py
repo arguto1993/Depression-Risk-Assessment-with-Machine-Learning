@@ -1,10 +1,3 @@
-"""
-Depression Risk Assessment with Machine Learning
-
-A Streamlit application for assessing depression risk in students using machine learning.
-This application demonstrates the application of classification models in mental health screening.
-"""
-
 import streamlit as st
 from utils.config import PAGE_TITLE, APP_TITLE
 from pages import (
@@ -15,7 +8,6 @@ from pages import (
 
 
 def main():
-    """Main application entry point."""
     # Configure the page
     st.set_page_config(
         page_title=PAGE_TITLE,
