@@ -52,3 +52,8 @@ GITHUB_REPO_LINK = (
     "https://github.com/arguto1993/depression-risk-classification/tree/main"
 )
 DATASET_LINK = "https://www.kaggle.com/datasets/hopesb/student-depression-dataset"
+
+# Color constants for Yes/No visualizations
+COLOR_YES = "#DC3545"
+COLOR_NO = "#28A745"
+YES_NO_COLOR_MAP = {"Yes": COLOR_YES, "No": COLOR_NO}

@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-from utils.config import DASHBOARD_LINK
+from utils.config import DASHBOARD_LINK, YES_NO_COLOR_MAP
 
 
 @st.cache_data
@@ -21,8 +21,7 @@ def create_donut_chart(df):
     )
 
     # Map colors based on the label to ensure correct color assignment
-    color_map = {"Yes": "#DC3545", "No": "#28A745"}
-    colors = [color_map[label] for label in depression_counts["Depression"]]
+    colors = [YES_NO_COLOR_MAP[label] for label in depression_counts["Depression"]]
 
     fig = go.Figure(
         data=[
@@ -62,7 +61,7 @@ def create_grouped_bar_chart(df, x_col, title, x_label):
         y="Count",
         color="Depression",
         barmode="group",
-        color_discrete_map={"Yes": "#DC3545", "No": "#28A745"},
+        color_discrete_map=YES_NO_COLOR_MAP,
         text="Count",
     )
 
@@ -96,7 +95,7 @@ def create_horizontal_bar_chart(df, y_col, title):
         color="Depression",
         orientation="h",
         barmode="group",
-        color_discrete_map={"Yes": "#DC3545", "No": "#28A745"},
+        color_discrete_map=YES_NO_COLOR_MAP,
         text="Count",
     )
 
@@ -141,7 +140,7 @@ def create_age_distribution_chart(df):
         color="Depression",
         orientation="h",
         barmode="stack",
-        color_discrete_map={"Yes": "#DC3545", "No": "#28A745"},
+        color_discrete_map=YES_NO_COLOR_MAP,
         text="Count",
     )
 
